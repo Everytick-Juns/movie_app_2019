@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+
 
 
 class Detail extends React.Component{
@@ -11,9 +11,13 @@ class Detail extends React.Component{
         }
     }
     render() {
+        
         const { location } = this.props;
-        return <div>{location.state.title}</div>
-
+        if (location.state) {
+            return <span>{location.state.title}</span>
+        }else{
+            return null;
+        }
     }
 }
 export default Detail;

@@ -5,17 +5,17 @@ import "./movie.css";
 
 
 
-function Movie({ year, title, summary, poster, genres }) {
+function Movie({ id, year, title, summary, poster, genres }) {
     return (
       <Link to={{
-        pathname:'movie-detail',
+        pathname:`/movie/${id}`,
         state: {
          year,
          title,
          summary,
          poster,
          genres,
-         
+
         }
       }}>
         <div className="movie">
