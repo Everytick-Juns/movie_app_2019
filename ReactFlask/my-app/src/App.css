@@ -1,0 +1,12 @@
+.main > h1 {
+  text-align: center;
+}
+div > h1.main {
+  color:blue;
+}
+h1.main2 {
+  color:red;
+}
+h1.main1{
+  color:blueviolet;
+}
